@@ -1,0 +1,145 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{9F03FAEC-4795-4BF5-BA1A-72169DCE790B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Mail_serviceV2</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\Mail_service_db_updater\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\Mail_service_db_updater\FileContentIndex\25e0b57b-14c1-4031-bfbd-7cbc99b40cd7.vsidx" />
+    <None Include=".vs\Mail_service_db_updater\FileContentIndex\2edf2ad3-7d99-4bdb-8128-2cf55ea1a497.vsidx" />
+    <None Include=".vs\Mail_service_db_updater\FileContentIndex\5a4c69a9-0d5c-4599-aab5-ee333de4b8cc.vsidx" />
+    <None Include=".vs\Mail_service_db_updater\FileContentIndex\949d2665-0cd1-4a42-ba20-20d22f86779b.vsidx" />
+    <None Include=".vs\Mail_service_db_updater\FileContentIndex\f0aa424f-9d3f-4284-824a-137b4693ed51.vsidx" />
+    <None Include=".vs\Mail_service_db_updater\v17\.futdcache.v2" />
+    <None Include=".vs\Mail_service_db_updater\v17\.suo" />
+    <None Include=".vs\ProjectEvaluation\mail_service_db_updater.metadata.v7.bin" />
+    <None Include=".vs\ProjectEvaluation\mail_service_db_updater.projects.v7.bin" />
+    <None Include="Mail_service_db_updater\appsettings.Development.json" />
+    <None Include="Mail_service_db_updater\appsettings.json" />
+    <None Include="Mail_service_db_updater\bin\Debug\net8.0\appsettings.Development.json" />
+    <None Include="Mail_service_db_updater\bin\Debug\net8.0\appsettings.json" />
+    <None Include="Mail_service_db_updater\bin\Debug\net8.0\Mail_service_db_updater.deps.json" />
+    <None Include="Mail_service_db_updater\bin\Debug\net8.0\Mail_service_db_updater.runtimeconfig.json" />
+    <None Include="Mail_service_db_updater\Mail_service_db_updater.csproj" />
+    <None Include="Mail_service_db_updater\obj\Debug\net8.0\Mail_service_db_updater.AssemblyInfoInputs.cache" />
+    <None Include="Mail_service_db_updater\obj\Debug\net8.0\Mail_service_db_updater.assets.cache" />
+    <None Include="Mail_service_db_updater\obj\Debug\net8.0\Mail_service_db_updater.csproj.AssemblyReference.cache" />
+    <None Include="Mail_service_db_updater\obj\Debug\net8.0\Mail_service_db_updater.csproj.BuildWithSkipAnalyzers" />
+    <None Include="Mail_service_db_updater\obj\Debug\net8.0\Mail_service_db_updater.csproj.CopyComplete" />
+    <None Include="Mail_service_db_updater\obj\Debug\net8.0\Mail_service_db_updater.csproj.CoreCompileInputs.cache" />
+    <None Include="Mail_service_db_updater\obj\Debug\net8.0\Mail_service_db_updater.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Mail_service_db_updater\obj\Debug\net8.0\Mail_service_db_updater.genruntimeconfig.cache" />
+    <None Include="Mail_service_db_updater\obj\Mail_service_db_updater.csproj.nuget.dgspec.json" />
+    <None Include="Mail_service_db_updater\obj\Mail_service_db_updater.csproj.nuget.g.props" />
+    <None Include="Mail_service_db_updater\obj\Mail_service_db_updater.csproj.nuget.g.targets" />
+    <None Include="Mail_service_db_updater\obj\project.assets.json" />
+    <None Include="Mail_service_db_updater\obj\project.nuget.cache" />
+    <None Include="Mail_service_db_updater\Properties\launchSettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mail_service_db_updater\mailProcessor.cs" />
+    <Compile Include="Mail_service_db_updater\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="Mail_service_db_updater\obj\Debug\net8.0\Mail_service_db_updater.AssemblyInfo.cs" />
+    <Compile Include="Mail_service_db_updater\obj\Debug\net8.0\Mail_service_db_updater.GlobalUsings.g.cs" />
+    <Compile Include="Mail_service_db_updater\old_redundant\MailSender.cs" />
+    <Compile Include="Mail_service_db_updater\old_redundant\SqlRequest.cs" />
+    <Compile Include="Mail_service_db_updater\Program.cs" />
+    <Compile Include="Mail_service_db_updater\Worker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Dapper.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Mail_service_db_updater.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Mail_service_db_updater.exe" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Mail_service_db_updater.pdb" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Configuration.CommandLine.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Configuration.UserSecrets.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Hosting.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Logging.Configuration.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Logging.Console.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Logging.Debug.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Logging.EventLog.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Logging.EventSource.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Options.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\System.Data.SqlClient.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\System.Diagnostics.EventLog.dll" />
+    <Content Include="Mail_service_db_updater\bin\Debug\net8.0\System.Net.Mail.Abstractions.dll" />
+    <Content Include="Mail_service_db_updater\obj\Debug\net8.0\apphost.exe" />
+    <Content Include="Mail_service_db_updater\obj\Debug\net8.0\Mail_service_db_updater.csproj.FileListAbsolute.txt" />
+    <Content Include="Mail_service_db_updater\obj\Debug\net8.0\Mail_service_db_updater.dll" />
+    <Content Include="Mail_service_db_updater\obj\Debug\net8.0\Mail_service_db_updater.pdb" />
+    <Content Include="Mail_service_db_updater\obj\Debug\net8.0\refint\Mail_service_db_updater.dll" />
+    <Content Include="Mail_service_db_updater\obj\Debug\net8.0\ref\Mail_service_db_updater.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\Mail_serviceV2\v17\" />
+    <Folder Include=".vs\sd\" />
+    <Folder Include="Mail_service_db_updater\Model\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

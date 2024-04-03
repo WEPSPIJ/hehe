@@ -1,0 +1,2 @@
+C:\Users\Work.Experience\source\repos\Mail_service_db_updater\obj\x86\Debug\Mail_serviceV2.csproj.AssemblyReference.cache
+C:\Users\Work.Experience\source\repos\Mail_service_db_updater\obj\x86\Debug\Mail_serviceV2.csproj.CoreCompileInputs.cache
